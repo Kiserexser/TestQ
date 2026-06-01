@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "fridonvisual",
+  "version": "1.0.0",
+  "name": "Fridon Visual",
+  "description": "Clean visual client",
+  "authors": ["Fridon"],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "fridon.visual.FridonVisual"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "1.21.1",
+    "fabric-api": "*"
+  }
+}
