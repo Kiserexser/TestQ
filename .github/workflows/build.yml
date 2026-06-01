@@ -1,4 +1,4 @@
-name: Build Fridon Visual
+name: Build
 
 on:
   push:
@@ -16,6 +16,9 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
+
+      - name: Make gradlew executable
+        run: chmod +x gradlew || true
 
       - name: Build
         run: ./gradlew build
